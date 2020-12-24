@@ -1,0 +1,17 @@
+#centered {
+  text-align: center;
+}
+
+.Random-content {
+  padding-top: 140px;
+  padding-bottom: 20px;
+}
+
+.Random-content a {
+  color: #016c84;
+  text-decoration: none;
+}
+
+.Random-content li {
+  list-style-image: url(cat_with_heart_bullet.png);
+}

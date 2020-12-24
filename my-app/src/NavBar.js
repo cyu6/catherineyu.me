@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
+
 import { AppBar, Toolbar, Button, Divider } from '@material-ui/core';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
-import logo from './cat_with_heart.png';
+import name from './name-cropped.svg';
 import './App.css';
 
 const CustomButton = withStyles({
@@ -42,7 +44,8 @@ const useStyles = makeStyles((theme) => ({
     },
     bar: {
         boxShadow: 'none',
-    }
+    },
+    offset: theme.mixins.toolbar,
 }));
 
 export default function NavBar() {
@@ -50,22 +53,22 @@ export default function NavBar() {
 
     return (
         <React.Fragment>
-            <AppBar position="fixed" color="transparent" className={classes.bar}>
-                <img id="logo" src={logo} alt="logo" width="50px"/>
+            <AppBar position="absolute" color="transparent" className={classes.bar}>
+                <img id="logo" src={name} alt="logo" width="150px"/>
                 <Toolbar variant="dense" className={classes.center}>
-                    <CustomButton variant="text" color="primary" disableRipple className={classes.margin}>
+                    <CustomButton variant="text" color="primary" disableRipple className={classes.margin} component={RouterLink} to="/">
                         about/home
                     </CustomButton>
-                    <CustomButton variant="text" color="primary" disableRipple className={classes.margin}>
-                        blog/thoughts
-                    </CustomButton>
-                    <CustomButton variant="text" color="primary" disableRipple className={classes.margin}>
+                    <CustomButton variant="text" color="primary" disableRipple className={classes.margin} component={RouterLink} to="/projects">
                         projects/work
+                    </CustomButton>
+                    <CustomButton variant="text" color="primary" disableRipple className={classes.margin} component={RouterLink} to="/blog">
+                        blog/thoughts
                     </CustomButton>
                 </Toolbar>
                 <Divider variant="middle" />
             </AppBar>
-            <Toolbar />
+            {/* <div className={classes.offset} /> */}
         </React.Fragment>        
     );
 }

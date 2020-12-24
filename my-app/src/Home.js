@@ -1,10 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
+
 import name from './name-cropped.svg';
 import head from './cat_with_heart.png';
 import './App.css';
 import { theme } from './theme';
+
 import { ThemeProvider, Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
+import Link from '@material-ui/core/Link';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import FOG from 'vanta/dist/vanta.fog.min';
@@ -44,6 +48,10 @@ const useStyles = makeStyles({
     maxHeight: '100%',
     padding: '10px',
   },
+  link: {
+    textDecoration: 'none',
+    color: '#fff',
+  }
 });
 
 
@@ -86,7 +94,9 @@ export default function Home() {
             <Grid item xs={2}>
             </Grid>
             <Grid item>
-              <img className={classes.img} alt="cat with heart" src={head} />
+              <Link className={classes.link} component={RouterLink} to="/random">
+                <img className={classes.img} alt="cat with heart" src={head} />
+              </Link>
             </Grid>
             <Grid item xs={12} sm container>
               <Grid item xs container direction="column" spacing={2}>
@@ -95,18 +105,23 @@ export default function Home() {
                     Hi! &#128522;
                   </Typography>
                   <Typography variant="body1" gutterBottom>
-                    My name is Catherine, and I'm a junior at Princeton University studying Math and Computer Science. Broadly speaking, my goal in life is to "make the world a better place".
+                    My name is Catherine, and I'm a junior at Princeton University studying Math and Computer Science. Broadly speaking, my mission is to "leave the world a little better than how I found it".
                   </Typography>
                   <Typography variant="body1" gutterBottom>
-                    I will be interning at Slack in Summer 2021, and I previously interned at Google on the CDPush and Play Analytics teams.
-                    You can learn about what I've worked on hereeeee. (insert link to page)
+                    I will be interning at Slack in Summer 2021, and I previously interned at Google on the CDPush and Play Analytics teams.&nbsp;
+                    <Link className={classes.link} component={RouterLink} to="/projects">
+                      Click here to learn about what I've worked on.
+                    </Link>
                   </Typography>
                   <Typography variant="body1" gutterBottom>
                     My interests include consuming Korean music and TV shows, reading science fiction and memoirs, and learning choreography. 
-                    I am working on writing more by blogging (aka, trying to put my thoughts into coherent sentences), which you can read hereeee.
+                    I am working on writing more by blogging (aka, trying to put my thoughts into coherent sentences)&nbsp;
+                    <Link className={classes.link} component={RouterLink} to="/blog">
+                      which you can read here.
+                    </Link>
                   </Typography>
                   <Typography variant="body1" gutterBottom>
-                    Feel free to reach out or check out the links below!
+                    Feel free to reach out by <a href="mailto:catyu6000@gmail.com">email</a> or check out the links below!
                   </Typography>
                 </Grid>
                 <Grid item>
