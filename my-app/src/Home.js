@@ -7,10 +7,18 @@ import './App.css';
 import { theme } from './theme';
 
 import { ThemeProvider, Typography } from '@material-ui/core';
+import IconButton from '@material-ui/core/IconButton';
 import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
+
+import EmailIcon from '@material-ui/icons/Email';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import MusicNoteRoundedIcon from '@material-ui/icons/MusicNoteRounded';
+
 import FOG from 'vanta/dist/vanta.fog.min';
 import * as THREE from 'three';
 
@@ -51,6 +59,10 @@ const useStyles = makeStyles({
   link: {
     textDecoration: 'none',
     color: '#fff',
+  },
+  icon: {
+    color: 'white',
+    marginRight: '10px',
   }
 });
 
@@ -99,13 +111,14 @@ export default function Home() {
               </Link>
             </Grid>
             <Grid item xs={12} sm container>
-              <Grid item xs container direction="column" spacing={2}>
+              <Grid item xs container direction="column" spacing={1}>
                 <Grid item>
                   <Typography gutterBottom variant="h4">
                     Hi! &#128522;
                   </Typography>
                   <Typography variant="body1" gutterBottom>
-                    My name is Catherine, and I'm a junior at Princeton University studying Math and Computer Science. Broadly speaking, my mission is to "leave the world a little better than how I found it".
+                    My name is Catherine, and I'm a junior at Princeton University studying Math and Computer Science. 
+                    I am generally interested in algorithmic game theory, computer graphics and vision, and frontend development.
                   </Typography>
                   <Typography variant="body1" gutterBottom>
                     I will be interning at Slack in Summer 2021, and I previously interned at Google on the CDPush and Play Analytics teams.&nbsp;
@@ -121,13 +134,25 @@ export default function Home() {
                     </Link>
                   </Typography>
                   <Typography variant="body1" gutterBottom>
-                    Feel free to reach out by <a href="mailto:catyu6000@gmail.com">email</a> or check out the links below!
+                    You can contact me by email at <a href="mailto:catyu6000@gmail.com">catyu6000@gmail.com</a> or check out the links below!
                   </Typography>
                 </Grid>
                 <Grid item>
-                  <Typography variant="body2">
-                    Icons go here
-                  </Typography>
+                  <IconButton className={classes.icon} aria-label="email" disableRipple component="a" href="mailto:catyu6000@gmail.com" target="_blank">
+                    <EmailIcon />
+                  </IconButton>
+                  <IconButton className={classes.icon} aria-label="linkedin" disableRipple component="a" href="https://www.linkedin.com/in/catyu/" target="_blank">
+                    <LinkedInIcon />
+                  </IconButton>
+                  <IconButton className={classes.icon} aria-label="github" disableRipple component="a" href="https://github.com/cyu6" target="_blank">
+                    <GitHubIcon />
+                  </IconButton>
+                  <IconButton className={classes.icon} aria-label="spotify" disableRipple component="a" href="https://open.spotify.com/playlist/3HFs0XE0EJaSJV7qSniPkX?si=NdbuwTq1SzuYG8iv-xlLSw" target="_blank">
+                    <MusicNoteRoundedIcon />
+                  </IconButton>
+                  <IconButton className={classes.icon} aria-label="spotify" disableRipple component="a" href="https://www.instagram.com/ccc_dancejournal/" target="_blank">
+                    <InstagramIcon />
+                  </IconButton>
                 </Grid>
               </Grid>
             </Grid>
