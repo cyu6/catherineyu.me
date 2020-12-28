@@ -2,7 +2,7 @@ import React from 'react';
 import './Random.css';
 import NavBar from './NavBar';
 import { theme } from './theme';
-import { ThemeProvider } from '@material-ui/core';
+import { ThemeProvider, Typography } from '@material-ui/core';
 // import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import ProjectCard from './ProjectCard';
@@ -12,11 +12,14 @@ import placeholder from './sunset.jpg';
 function Projects() {
   return (
     // <div className={classes.root}>
-    <div className="Random">
+    <div className="Random" style={{paddingTop: "140px",}}>
       <ThemeProvider theme={theme}>
         <NavBar />
       </ThemeProvider>
-      <div className="Random-content">
+      <Typography gutterBottom variant="h3" style={{textAlign: "center", paddingBottom: "20px",}}>
+        what I've worked on / am currently working on
+      </Typography>
+      <div>
         <Grid container spacing={2}>
           <Grid item xs></Grid>
           <Grid item xs={4}>

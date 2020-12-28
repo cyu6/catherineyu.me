@@ -114,7 +114,7 @@ export default function Home() {
                     </Link>
                   </Typography>
                   <Typography variant="body1" gutterBottom>
-                    My interests include consuming Korean music and TV shows, reading science fiction and memoirs, and learning choreography. 
+                    My interests include consuming Korean music and TV shows, reading science fiction and memoirs, learning choreography, practicing calligraphy, and traveling.  
                     I am working on writing more by blogging (aka, trying to put my thoughts into coherent sentences)&nbsp;
                     <Link className={classes.link} component={RouterLink} to="/blog">
                       which you can read here.

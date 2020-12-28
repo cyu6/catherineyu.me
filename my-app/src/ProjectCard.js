@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link as RouterLink } from 'react-router-dom';
+// import { Link as RouterLink } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -15,6 +15,7 @@ import { ThemeProvider } from '@material-ui/core';
 const useStyles = makeStyles({
   root: {
     maxWidth: 500,
+    marginBottom: '50px',
   },
   media: {
     height: 200,
