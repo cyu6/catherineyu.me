@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/catherineyu.me/static/css/main.c161da89.chunk.css",
+    "main.js": "/catherineyu.me/static/js/main.659da095.chunk.js",
+    "main.js.map": "/catherineyu.me/static/js/main.659da095.chunk.js.map",
+    "runtime-main.js": "/catherineyu.me/static/js/runtime-main.f544c0fd.js",
+    "runtime-main.js.map": "/catherineyu.me/static/js/runtime-main.f544c0fd.js.map",
+    "static/js/2.fe838efc.chunk.js": "/catherineyu.me/static/js/2.fe838efc.chunk.js",
+    "static/js/2.fe838efc.chunk.js.map": "/catherineyu.me/static/js/2.fe838efc.chunk.js.map",
+    "static/js/3.868e94bd.chunk.js": "/catherineyu.me/static/js/3.868e94bd.chunk.js",
+    "static/js/3.868e94bd.chunk.js.map": "/catherineyu.me/static/js/3.868e94bd.chunk.js.map",
+    "index.html": "/catherineyu.me/index.html",
+    "static/css/main.c161da89.chunk.css.map": "/catherineyu.me/static/css/main.c161da89.chunk.css.map",
+    "static/js/2.fe838efc.chunk.js.LICENSE.txt": "/catherineyu.me/static/js/2.fe838efc.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/catherineyu.me/static/media/Rubik-Regular.a4bece5c.ttf",
+    "static/media/cat_with_heart.4e69e7b5.png": "/catherineyu.me/static/media/cat_with_heart.4e69e7b5.png",
+    "static/media/name-cropped.7203cf65.svg": "/catherineyu.me/static/media/name-cropped.7203cf65.svg",
+    "static/media/sunset.6728255e.jpg": "/catherineyu.me/static/media/sunset.6728255e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f544c0fd.js",
+    "static/js/2.fe838efc.chunk.js",
+    "static/css/main.c161da89.chunk.css",
+    "static/js/main.659da095.chunk.js"
+  ]
+}
