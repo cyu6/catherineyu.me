@@ -18,6 +18,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MusicNoteRoundedIcon from '@material-ui/icons/MusicNoteRounded';
+import ArticleIcon from '@mui/icons-material/Article';
 
 import FOG from 'vanta/dist/vanta.fog.min';
 import * as THREE from 'three';
@@ -117,17 +118,18 @@ export default function Home() {
                     Hi! &#128522;
                   </Typography>
                   <Typography variant="body1" gutterBottom>
-                    My name is Catherine, and I'm a junior at Princeton University studying Math and Computer Science. 
-                    I am generally interested in algorithmic game theory, computer graphics and vision, and frontend development.
+                    My name is Catherine, and I'm a senior at Princeton University studying Math and Computer Science. 
+                    I am generally interested in algorithmic game theory, frontend web development, and blockchain + web3.
                   </Typography>
                   <Typography variant="body1" gutterBottom>
-                    I will be interning at Slack in Summer 2021, and I previously interned at Google on the CDPush and Play Analytics teams.&nbsp;
+                    I'm excited to be starting at Stripe in Fall 2022 as a new grad software engineer! 
+                    I previously <a className={classes.link} href="https://slack.engineering/mergers-and-acquisitions-as-a-slack-intern/" target="_blank" rel="noreferrer">interned at Slack</a> on the Customer Acquisition team and at Google on the CDPush and Play Analytics teams.&nbsp;
                     <Link className={classes.link} component={RouterLink} to="/projects">
                       Click here to learn about what I've worked on.
                     </Link>
                   </Typography>
                   <Typography variant="body1" gutterBottom>
-                    My interests include consuming Korean music and TV shows, reading science fiction and memoirs, learning choreography, practicing calligraphy, and traveling.  
+                    My interests include consuming Korean media (music, TV shows, etc.), reading science fiction and memoirs, learning choreography, and traveling.  
                     I am working on writing more by blogging (aka, trying to put my thoughts into coherent sentences)&nbsp;
                     <Link className={classes.link} component={RouterLink} to="/blog">
                       which you can read here.
@@ -141,6 +143,9 @@ export default function Home() {
                   <IconButton className={classes.icon} aria-label="email" disableRipple component="a" href="mailto:catyu6000@gmail.com" target="_blank">
                     <EmailIcon />
                   </IconButton>
+                  <IconButton className={classes.icon} aria-label="resume" disableRipple component="a" href="https://drive.google.com/file/d/1-pKxRohkDvn1V3igtXox21SAk_xfUxa3/view?usp=sharing" target="_blank">
+                    <ArticleIcon />
+                  </IconButton>
                   <IconButton className={classes.icon} aria-label="linkedin" disableRipple component="a" href="https://www.linkedin.com/in/catyu/" target="_blank">
                     <LinkedInIcon />
                   </IconButton>
@@ -150,7 +155,7 @@ export default function Home() {
                   <IconButton className={classes.icon} aria-label="spotify" disableRipple component="a" href="https://open.spotify.com/playlist/3HFs0XE0EJaSJV7qSniPkX?si=NdbuwTq1SzuYG8iv-xlLSw" target="_blank">
                     <MusicNoteRoundedIcon />
                   </IconButton>
-                  <IconButton className={classes.icon} aria-label="spotify" disableRipple component="a" href="https://www.instagram.com/ccc_dancejournal/" target="_blank">
+                  <IconButton className={classes.icon} aria-label="instagram" disableRipple component="a" href="https://www.instagram.com/ccc_dancejournal/" target="_blank">
                     <InstagramIcon />
                   </IconButton>
                 </Grid>
