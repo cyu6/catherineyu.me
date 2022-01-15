@@ -20,7 +20,7 @@ function Random() {
           <ul>
             <li>reading: <i>Girl, Woman, Other</i> by Bernardine Evaristo</li>
             <li>listening to: "Go On Then, Love" by Said The Sky, The Maine <a href="https://open.spotify.com/track/0Ux2vG5O8Odi5WCiPARWw8?si=69afc58e1b8a4355" target="_blank" rel="noreferrer">(on Spotify)</a></li>
-            <li>learning choreo from: "I Can't Stop Me" by TWICE <a href="https://www.youtube.com/watch?v=v20KGhMMa6s" target="_blank" rel="noreferrer">(on YouTube)</a></li>
+            <li>learning choreo from: "Pirate" by Everglow <a href="https://www.youtube.com/watch?v=v20KGhMMa6s" target="_blank" rel="noreferrer">(on YouTube)</a></li>
             <li>watching: <i>Peaky Blinders</i> <a href="https://www.netflix.com/title/80002479" target="_blank" rel="noreferrer">(on Netflix)</a></li>
             <li>working on: building a healthier lifestyle (eating healthier, sleeping regularly, exercising)</li>
             <li>thinking about: investing in the stock market, the future of web3</li>
