@@ -18,12 +18,12 @@ function Random() {
           <h3 id="centered">here are some random things to know about me</h3>
           <p>i am currently...</p>
           <ul>
-            <li>reading: <i>The Hidden Girl and Other Stories</i> by Ken Liu, a collection of short stories</li>
-            <li>listening to: "For You" by Lee Hi feat. Crush <a href="https://open.spotify.com/track/0JL7DoEqAUcOntWmBuOSdh?si=ni00xrIpTw6wBfYuvM-qGg" target="_blank" rel="noreferrer">(listen here)</a></li>
-            <li>learning choreo from: "I Can't Stop Me" by TWICE <a href="https://www.youtube.com/watch?v=pMQjg5b-3gE" target="_blank" rel="noreferrer">(watch here)</a></li>
-            <li>watching: <i>Start-Up</i> <a href="https://www.netflix.com/title/81290293" target="_blank" rel="noreferrer">(on Netflix)</a> and Among Us streams</li>
+            <li>reading: <i>Girl, Woman, Other</i> by Bernardine Evaristo</li>
+            <li>listening to: "Go On Then, Love" by Said The Sky, The Maine <a href="https://open.spotify.com/track/0Ux2vG5O8Odi5WCiPARWw8?si=69afc58e1b8a4355" target="_blank" rel="noreferrer">(on Spotify)</a></li>
+            <li>learning choreo from: "I Can't Stop Me" by TWICE <a href="https://www.youtube.com/watch?v=v20KGhMMa6s" target="_blank" rel="noreferrer">(on YouTube)</a></li>
+            <li>watching: <i>Peaky Blinders</i> <a href="https://www.netflix.com/title/80002479" target="_blank" rel="noreferrer">(on Netflix)</a></li>
             <li>working on: building a healthier lifestyle (eating healthier, sleeping regularly, exercising)</li>
-            <li>thinking about: investing in the stock market</li>
+            <li>thinking about: investing in the stock market, the future of web3</li>
           </ul>
           <br></br>
           <p>my all time recs...</p>

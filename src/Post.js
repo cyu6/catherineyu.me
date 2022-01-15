@@ -1,4 +1,4 @@
-import placeholder from './sunset.jpg';
+import placeholder from './images/sunset.jpg';
 
 function Post(path, title, date, image, blurb, notionId) {
   this.path = path;

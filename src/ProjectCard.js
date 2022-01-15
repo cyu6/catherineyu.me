@@ -2,7 +2,8 @@ import React from 'react';
 // import { Link as RouterLink } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
+// use when each project has its own link
+// import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -17,8 +18,11 @@ const useStyles = makeStyles({
     maxWidth: 500,
     marginBottom: '50px',
   },
+  mainCard: {
+    pointerEvents: null,
+  },
   media: {
-    height: 200,
+    height: 250,
   },
 });
 
@@ -28,7 +32,7 @@ export default function ProjectCard(props) {
   return (
     <ThemeProvider theme={theme}>
       <Card className={classes.root}>
-        <CardActionArea>
+        {/* <CardActionArea className={classes.mainCard}> */}
           <CardMedia
             component="img"
             className={classes.media}
@@ -49,15 +53,18 @@ export default function ProjectCard(props) {
               {props.tools}
             </Typography>
           </CardContent>
-        </CardActionArea>
+        {/* </CardActionArea> */}
         <CardActions>
           {/* TODO: make this dependent on a prop passed in. either an external link or a RouterLink. */}
+          {/* TODO: follow up on ^. pass in an array of Url/Link/etc. objects and use for each to turn them into buttons */}
           <Button size="small" color="primary" href={props.path} target="_blank">
             {props.link}
           </Button>
-          {/* <Button size="small" color="primary">
-            Link 2
-          </Button> */}
+          {/* temporary fix for second link */}
+          {props.path2 ? 
+            <Button size="small" color="primary" href={props.path2} target="_blank">
+              {props.link2}
+            </Button> : null}
         </CardActions>
       </Card>
     </ThemeProvider>
