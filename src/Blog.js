@@ -14,7 +14,7 @@ import { posts } from './Post';
 import { ThemeProvider, Typography } from '@material-ui/core';
 
 const piecePathToPost = new Map([
-  ["first-post", posts[0]],
+  // ["first-post", posts[0]],
   // ["2020-recap", "Looking Back on 2020"], 
   // ["dream-internship", "The Dream Internship: A Summer at Google"]
 ]);
