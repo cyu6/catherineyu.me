@@ -62,9 +62,9 @@ export default function NavBar() {
                     <CustomButton variant="text" color="primary" disableRipple className={classes.margin} component={RouterLink} to="/projects">
                         projects/work
                     </CustomButton>
-                    <CustomButton variant="text" color="primary" disableRipple className={classes.margin} component={RouterLink} to="/blog">
+                    {/* <CustomButton variant="text" color="primary" disableRipple className={classes.margin} component={RouterLink} to="/blog">
                         blog/thoughts
-                    </CustomButton>
+                    </CustomButton> */}
                 </Toolbar>
                 <Divider variant="middle" />
             </AppBar>

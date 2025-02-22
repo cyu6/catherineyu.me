@@ -27,37 +27,37 @@ import * as THREE from 'three';
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
-    backgroundColor: '#6ed0e6',
+    backgroundColor: '#fff',
+    paddingTop: '5%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    height: '100vh',
-    [theme.breakpoints.down('md')]: {
-      marginTop: '20%',
-      marginBottom: '10%',
-      padding: '5%'
-    }
+    height: '90vh',
   },
   paper: {
-    // padding: theme.spacing(2),
-    margin: '1%',
+    padding: theme.spacing(2),
+    margin: 'auto',
     boxShadow: 'none',
     background: 'transparent',
-    // paddingBottom: '10%',
+    paddingBottom: '10%',
   },
   name: {
-    // padding: theme.spacing(2),
-    margin: '1%',
+    padding: theme.spacing(2),
+    margin: 'auto',
     boxShadow: 'none',
     background: 'transparent',
     width: '20%',
   },
   nameImage: {
     width: '100%',
-    [theme.breakpoints.down('md')]: {
-      width: '0%'
-    },
+  },
+  img: {
+    margin: 'auto',
+    display: 'block',
+    maxWidth: '100%',
+    maxHeight: '100%',
+    padding: '10px',
   },
   imgContainer: {
     maxWidth: 128,
@@ -75,27 +75,9 @@ const useStyles = makeStyles({
       maxHeight: 128
     },
   },
-  img: {
-    margin: 'auto',
-    display: 'block',
-    maxWidth: '100%',
-    maxHeight: '100%',
-    padding: '10px',
-  },
   link: {
     textDecoration: 'none',
     color: '#fff',
-  },
-  secondaryContainer: {
-    [theme.breakpoints.down('md')]: {
-      maxWidth: 80,
-      maxHeight: 80,
-      paddingBottom: 20,
-    },
-    [theme.breakpoints.up('md')]: {
-      maxWidth: 0,
-      maxHeight: 0
-    },
   },
   icon: {
     color: 'white',
@@ -107,8 +89,32 @@ const useStyles = makeStyles({
 export default function Home() {
   const classes = useStyles();
 
+  const [vantaEffect, setVantaEffect] = useState(0)
+  const myRef = useRef(null)
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(FOG({
+        el: myRef.current,
+        THREE: THREE,
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        highlightColor: '#e498c9',
+        midtoneColor: '#a599b5',
+        lowlightColor: '#016c84',
+        baseColor: '#efc69b',
+        speed: 1.20
+      }))
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy()
+    }
+  }, [vantaEffect])
+
   return (
-    <div className={classes.root}>
+    <div ref={myRef} className={classes.root}>
       <ThemeProvider theme={theme} >
         <Paper className={classes.name}>
           <img className={classes.nameImage} src={name} alt="Catherine Yu" />
@@ -125,11 +131,6 @@ export default function Home() {
             <Grid item xs={12} sm container>
               <Grid item xs container direction="column" spacing={1}>
                 <Grid item>
-                  <div className={classes.secondaryContainer}>
-                    <Link className={classes.link} component={RouterLink} to="/random">
-                      <img className={classes.img} alt="cat with heart" src={head} />
-                    </Link>
-                  </div>
                   <Typography gutterBottom variant="h4">
                     Hi! ☺
                   </Typography>

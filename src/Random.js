@@ -18,10 +18,10 @@ function Random() {
           <h3 id="centered">here are some random things to know about me</h3>
           <p>i am currently...</p>
           <ul>
-            <li>reading: <i>Girl, Woman, Other</i> by Bernardine Evaristo</li>
+            <li>reading: <i>Parable of the Sower</i> by Octavia E. Butler</li>
             <li>listening to: "Go On Then, Love" by Said The Sky, The Maine <a href="https://open.spotify.com/track/0Ux2vG5O8Odi5WCiPARWw8?si=69afc58e1b8a4355" target="_blank" rel="noreferrer">(on Spotify)</a></li>
-            <li>learning choreo from: "Pirate" by Everglow <a href="https://www.youtube.com/watch?v=v20KGhMMa6s" target="_blank" rel="noreferrer">(on YouTube)</a></li>
-            <li>watching: <i>Peaky Blinders</i> <a href="https://www.netflix.com/title/80002479" target="_blank" rel="noreferrer">(on Netflix)</a></li>
+            <li>learning choreo at: Modega <a href="https://moversbodega.com/" target="_blank" rel="noreferrer">(in LIC)</a></li>
+            <li>watching: <i>The White Lotus, Season 3</i> <a href="https://play.max.com/show/14f9834d-bc23-41a8-ab61-5c8abdbea505" target="_blank" rel="noreferrer">(on Hulu)</a></li>
             <li>working on: building a healthier lifestyle (eating healthier, sleeping regularly, exercising)</li>
             <li>thinking about: investing in the stock market, the future of web3</li>
           </ul>

@@ -33,12 +33,15 @@ export default function ProjectCard(props) {
     <ThemeProvider theme={theme}>
       <Card className={classes.root}>
         {/* <CardActionArea className={classes.mainCard}> */}
-          <CardMedia
-            component="img"
-            className={classes.media}
-            image={props.img}
-            title="placeholder"
-          />
+        {
+          props.img ? 
+            <CardMedia
+              component="img"
+              className={classes.media}
+              image={props.img}
+              title="placeholder"
+            /> : <div />
+        }
           <CardContent>
             <Typography variant="h5" component="h2">
               {props.name}
