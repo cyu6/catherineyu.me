@@ -144,8 +144,8 @@ export default function Home() {
                     and recently, contribute to the <a className={classes.link} href="https://remote.com/blog/crypto-payments" target="_blank" rel="noreferrer">re-launch</a> of our stablecoin payouts product!
                   </Typography>
                   <Typography variant="body1" gutterBottom>
-                    I graduated from Princeton University in May 2022 as a Math major with a minor in Computer Science.<br/>
-                    I previously <a className={classes.link} href="https://slack.engineering/mergers-and-acquisitions-as-a-slack-intern/" target="_blank" rel="noreferrer">interned at Slack</a> on the Customer Acquisition team and at Google on the CDPush and Play Analytics teams.&nbsp;
+                    I graduated from Princeton University as a Mathematics major with a minor in Computer Science.<br/>
+                    Previously, I was at Slack on the <a className={classes.link} href="https://slack.engineering/mergers-and-acquisitions-as-a-slack-intern/" target="_blank" rel="noreferrer">Customer Acquisition team</a> and at Google on the CDPush and Play Analytics teams.&nbsp;
                     <Link className={classes.link} component={RouterLink} to="/projects">
                       Learn more about what I've worked on.
                     </Link>
@@ -177,7 +177,7 @@ export default function Home() {
                   <IconButton className={classes.icon} aria-label="spotify" disableRipple component="a" href="https://open.spotify.com/playlist/3HFs0XE0EJaSJV7qSniPkX?si=NdbuwTq1SzuYG8iv-xlLSw" target="_blank">
                     <MusicNoteRoundedIcon />
                   </IconButton>
-                  <IconButton className={classes.icon} aria-label="instagram" disableRipple component="a" href="https://www.instagram.com/cc_dancejournal/" target="_blank">
+                  <IconButton className={classes.icon} aria-label="instagram" disableRipple component="a" href="https://www.instagram.com/ccdancejournal/" target="_blank">
                     <InstagramIcon />
                   </IconButton>
                 </Grid>
