@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a61dacbe.css",
+    "main.js": "/static/js/main.b2040fe4.js",
+    "static/js/422.03abd816.chunk.js": "/static/js/422.03abd816.chunk.js",
+    "static/media/ep_internship.jpg": "/static/media/ep_internship.82934e4e3a6ecd067b96.jpg",
+    "static/media/step_internship.png": "/static/media/step_internship.c302fb9b2f2ed148cc37.png",
+    "static/media/avatar.png": "/static/media/avatar.84925bcd71974898448e.png",
+    "static/media/blackpink_output.png": "/static/media/blackpink_output.7d59502be3f0fa4e3734.png",
+    "static/media/slack_internship.jpg": "/static/media/slack_internship.21039d1159cfbb0d1590.jpg",
+    "static/media/digital_hubris.png": "/static/media/digital_hubris.f169b96f45a455a49b16.png",
+    "static/media/Rubik-Regular.ttf": "/static/media/Rubik-Regular.a4bece5c270c316c1c24.ttf",
+    "static/media/Rubik-Bold.ttf": "/static/media/Rubik-Bold.366b50ff64dedebe9f17.ttf",
+    "static/media/Rubik-Light.ttf": "/static/media/Rubik-Light.d950a0114eeb21b6d8dc.ttf",
+    "static/media/sunset.jpg": "/static/media/sunset.6728255e11a0f937e07e.jpg",
+    "static/media/Rubik-Italic.ttf": "/static/media/Rubik-Italic.03738d27c7da434f798f.ttf",
+    "static/media/cat_with_heart.png": "/static/media/cat_with_heart.4e69e7b5ed0d60fe8061.png",
+    "static/media/name-cropped.svg": "/static/media/name-cropped.7203cf65c02efc495bc89823d378fabd.svg",
+    "index.html": "/index.html",
+    "main.a61dacbe.css.map": "/static/css/main.a61dacbe.css.map",
+    "main.b2040fe4.js.map": "/static/js/main.b2040fe4.js.map",
+    "422.03abd816.chunk.js.map": "/static/js/422.03abd816.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a61dacbe.css",
+    "static/js/main.b2040fe4.js"
+  ]
+}
