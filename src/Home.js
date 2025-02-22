@@ -141,7 +141,7 @@ export default function Home() {
                       <ListItem sx={{ display: 'list-item' }}>♡ redesign coupon and promotion code discounting infrastructure to be more robust </ListItem>
                       <ListItem sx={{ display: 'list-item' }}>♡ lead the migration of 200+ API endpoints to a new internal service </ListItem>
                     </List>
-                    and recently, contribute to the <a className={classes.link} href="https://remote.com/blog/crypto-payments" target="_blank" rel="noreferrer">re-launch</a> our stablecoin payouts product!
+                    and recently, contribute to the <a className={classes.link} href="https://remote.com/blog/crypto-payments" target="_blank" rel="noreferrer">re-launch</a> of our stablecoin payouts product!
                   </Typography>
                   <Typography variant="body1" gutterBottom>
                     I graduated from Princeton University in May 2022 as a Math major with a minor in Computer Science.<br/>
